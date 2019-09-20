@@ -1,3 +1,23 @@
+
+html {
+
+  position: relative;
+  min-height; 100%;
+}
+
+
+
+
+/* Background picture on all pages */
+body {
+
+  position: relative;
+background-image: url("../images/interlaced.png");
+
+}
+
+
+
 .header {
 
   background-color: #ffffff;
@@ -10,12 +30,15 @@
 
 }
 
+/* Header content area - Name and Menu */
 .headercontent {
 
   width: 960px;
   margin: 0 auto;
 
 }
+
+/* Main section title (About Me - Contact Info - Portfolio Headers */
 
 h1 {
   font-family: 'Georgia', Times, Times New Roman, serif;
@@ -31,7 +54,7 @@ h1 {
 
 }
 
-
+/* My Name - all pages (In Header) */
 #name {
   font-family: 'Georgia', Times, Times New Roman, serif;
   background-color: #4aaaa5;
@@ -42,16 +65,16 @@ h1 {
   display: inline-block;
   padding-right: 10px;
   padding-left: 10px;
+
   text-align: center;
   vertical-align: middle;
   line-height: 75px;
   font-weight: bold;
 }
 
-
+/* Main Div - In between header and footer - all pages */
 .main {
-
-    margin: 0 auto;
+    margin: auto;
     color: #777777;
     font-size: 1em;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -59,11 +82,17 @@ h1 {
     border: 1px solid #dddddd;
     background-color: #ffffff;
     margin-top: 20px;
+    margin-bottom: 100px;
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 50px;
 
-    
-     
+
+
 }
 
+
+/* About me page main content */
 .myinfo {
 
   line-height: 1.5em;
@@ -71,22 +100,47 @@ h1 {
   margin-right: 20px;
   padding-bottom: 20px;
   margin-top: -6px;
-
+  /* height: auto; */
 }
 
-
+/* Portfolio page image section */
 
 .portfolioinfo {
   margin-left: 20px;
-  
- 
+  height: 750px;
+  padding-bottom: 20px;
 
 }
+
+/* Each image and text pair has it's own container */
 
 .placeholder1 {
   float: left;
   padding-bottom: 20px;
+  
+
   }
+
+i.placeholderimages {
+
+  
+
+}
+
+p.placeholdertitles  {
+z-index: 99;
+font-family: 'Georgia', Times, Times New Roman, serif;
+background-color: #4aaaa5;
+font-size: 14px;
+color: white;
+width: auto;
+position: relative;
+text-align: center;
+vertical-align: middle;
+line-height: 40px;
+bottom: 60px;
+
+}
 
 .placeholder2 {
 float: right;
@@ -107,34 +161,23 @@ padding-bottom: 20px;
     padding-right: 30%;
     padding-bottom: 20px;
     
-    }
+    } 
 
     .placeholder5 {
+      
+      clear: both;
        float: left;
       padding-bottom: 20px;
       
       }
   
+/* End of Portfolio section */
 
 
+/* For Picture of myself on About Page */
 #headshot {
   float: left;
   width: 150px;
   padding-right: 20px;
   padding-left: 20px;
 }
-
-
-
-
-}
-
-
-
-
-
-
-body {
-background-image: url("../images/interlaced.png");
-}
-
